@@ -140,6 +140,7 @@ button {
 #main-success {
     padding: 1.5rem;
     justify-content: center;
+    min-height: 100vh;
 }
 
 #main-success .content {
@@ -188,9 +189,6 @@ button {
     h1 {
         font-size: 3rem;
     }
-}
-
-@media screen and (min-width:30rem) {
     #main-success {
         max-width: 30rem;
         min-height: 0;
