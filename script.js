@@ -21,7 +21,7 @@ formDiv.addEventListener("submit", (e) => {
   mainSuccess.classList.remove("hide");
 });
 
-email.addEventListener("input", () => {
+email.addEventListener("focusout", () => {
   if (email.validity.valid) {
     emailError.textContent = "";
     email.classList.remove("input-invalid");
@@ -33,3 +33,7 @@ email.addEventListener("input", () => {
     emailError.textContent = "Email required";
   }
 });
+email.addEventListener("focusin",()=>{
+    emailError.textContent="";
+})
+fetch('')
